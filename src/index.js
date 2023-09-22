@@ -2,8 +2,10 @@ import React from 'react';
 import { render } from 'react-dom';
 import MySection from './components/MySection';
 import MeuBotao from './components/MeuBotao';
-const mysection =render(<MySection>
-sdsd
+var botao = 'text';
+const mysection = render(<MySection>
+    {botao}
+    <MeuBotao></MeuBotao>
 </MySection>, document.getElementById('root'));
 
 setTimeout(() => {
@@ -11,4 +13,5 @@ setTimeout(() => {
  heading: 'React Awesomesauce',
  content: 'Done!'
  });
+    botao = 'sdsds';
 }, 3000);
